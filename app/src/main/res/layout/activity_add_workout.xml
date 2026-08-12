@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Workout hinzufügen"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextWorkoutType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:hint="Workout-Art, z. B. Laufen"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/editTextWorkoutDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:focusable="false"
+            android:hint="Datum auswählen"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editTextWorkoutDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Dauer in Minuten"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextWorkoutDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Distanz in Kilometern, optional"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextWorkoutNotes"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="12dp"
+            android:gravity="top|start"
+            android:hint="Notizen, optional"
+            android:inputType="textMultiLine"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/buttonSaveWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Workout speichern" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSaveWorkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

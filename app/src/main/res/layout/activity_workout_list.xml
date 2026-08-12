@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewWorkoutListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meine Workouts"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewWorkouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:queryHint="Workouts durchsuchen"
+        android:iconifiedByDefault="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Workout-Art filtern"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerWorkoutTypeFilter"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Sortierung"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerWorkoutSort"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <TextView
+        android:id="@+id/textViewWorkoutResultCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="0 Workouts"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarWorkoutList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewEmptyWorkoutList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Noch keine Workouts gespeichert."
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listViewWorkouts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>
